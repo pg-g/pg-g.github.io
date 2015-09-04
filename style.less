@@ -76,14 +76,39 @@
 
 	.work {
 		.grid {
-			.box {
+			a {
 				display: inline;
-				width: 30%;
-				/*height: 30%;*/
-				background-color: @theColor;
-				margin-right: 3%;
+				margin: 0px;
+				padding: 0px;
+
+				.box {
+					width: 28%;
+					border: 1px solid lighten(@gray, 50%);
+				}
+
+				/*padding: 2px;*/
+				/*background-color: @theColor;*/
+/*				margin-right: 4%;
+				&:last-child {
+					margin-right: 0px;
+				}*/
+
+				.caption {
+					text-align: center;
+					font-size: 13px;
+					width: 28%;
+				}
 			}
 		}
+	}
+
+	footer {
+		font-size: 12px;
+		font-weight: 300;
+		/*border-top: 1px double @theColor;*/
+		color: @theColor;
+		text-align: center;
+		padding: 20px;
 	}
 
 }

@@ -55,10 +55,31 @@
   font-size: 14px;
   text-transform: uppercase;
 }
-.container .work .grid .box {
+.container .work .grid a {
   display: inline;
-  width: 30%;
-  /*height: 30%;*/
-  background-color: #58c1ef;
-  margin-right: 3%;
+  margin: 0px;
+  padding: 0px;
+  /*padding: 2px;*/
+  /*background-color: @theColor;*/
+  /*				margin-right: 4%;
+				&:last-child {
+					margin-right: 0px;
+				}*/
+}
+.container .work .grid a .box {
+  width: 28%;
+  border: 1px solid #d8d9da;
+}
+.container .work .grid a .caption {
+  text-align: center;
+  font-size: 13px;
+  width: 28%;
+}
+.container footer {
+  font-size: 12px;
+  font-weight: 300;
+  /*border-top: 1px double @theColor;*/
+  color: #58c1ef;
+  text-align: center;
+  padding: 20px;
 }
