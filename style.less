@@ -90,9 +90,19 @@
 				padding: 0px;
 
 				.box {
-					width: 28%;
-					border: 1px solid lighten(@gray, 50%);
-					margin-right: 3%;
+					width: 80%;
+					display: block;
+					@media (min-width: 500px) {
+						width: 40%;
+						display: inline;
+					}
+					@media (min-width: 900px) {
+						width: 25%;
+						margin-right: 4%;
+						display: inline;
+					}
+					border: 1px solid lighten(@gray, 55%);
+					padding: 15px;
 					transition: all 0.3s;
 				}
 
@@ -102,16 +112,16 @@
 					width: 27%;
 					margin-right: 3%;
 					padding: 12.1% 0;
-					background-color: @theColor;
+					background-color: lighten(@theColor, 5%);
 					color: white;
 					
 					position: absolute;
 					left: 50px;
 					&.two {
-						left: 32.5%;
+						left: 34%;
 					}
 					&.three {
-						left: 62%;
+						left: 64%;
 					}
 
 					opacity: 0;
@@ -119,24 +129,22 @@
 					display: inline;
 				}
 			}
-			a:hover {
-				.box {
-					opacity: 0;
-					/*top: 500px;*/
-					/*display: none;*/
+			@media (min-width: 900px){
+				a:hover {
+					.box {
+						opacity: 0;
+					}
+					.caption {
+						opacity: 1;
+					}
 				}
-				.caption {
-					opacity: 1;
-					/*display: inline;*/
-				}
-			}
+			} //end hover
 		}
 	}
 
 	.contact {
 		h3 {
 			font-size: 85px;
-			/*padding-top: 10%;*/
 		}
 		a {
 			transition: all 0.3s;
@@ -149,10 +157,9 @@
 	footer {
 		font-size: 12px;
 		font-weight: 300;
-		/*border-top: 1px double @theColor;*/
 		color: @gray;
 		text-align: center;
-		padding: 20px;
+		margin-bottom: 50px !important;
 	}
 
 }

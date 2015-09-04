@@ -69,10 +69,24 @@
   padding: 0px;
 }
 .container .work .grid a .box {
-  width: 28%;
-  border: 1px solid #d8d9da;
-  margin-right: 3%;
+  width: 80%;
+  display: block;
+  border: 1px solid #e5e6e6;
+  padding: 15px;
   transition: all 0.3s;
+}
+@media (min-width: 500px) {
+  .container .work .grid a .box {
+    width: 40%;
+    display: inline;
+  }
+}
+@media (min-width: 900px) {
+  .container .work .grid a .box {
+    width: 25%;
+    margin-right: 4%;
+    display: inline;
+  }
 }
 .container .work .grid a .caption {
   text-align: center;
@@ -80,7 +94,7 @@
   width: 27%;
   margin-right: 3%;
   padding: 12.1% 0;
-  background-color: #58c1ef;
+  background-color: #6fcaf1;
   color: white;
   position: absolute;
   left: 50px;
@@ -89,23 +103,21 @@
   display: inline;
 }
 .container .work .grid a .caption.two {
-  left: 32.5%;
+  left: 34%;
 }
 .container .work .grid a .caption.three {
-  left: 62%;
+  left: 64%;
 }
-.container .work .grid a:hover .box {
-  opacity: 0;
-  /*top: 500px;*/
-  /*display: none;*/
-}
-.container .work .grid a:hover .caption {
-  opacity: 1;
-  /*display: inline;*/
+@media (min-width: 900px) {
+  .container .work .grid a:hover .box {
+    opacity: 0;
+  }
+  .container .work .grid a:hover .caption {
+    opacity: 1;
+  }
 }
 .container .contact h3 {
   font-size: 85px;
-  /*padding-top: 10%;*/
 }
 .container .contact a {
   transition: all 0.3s;
@@ -116,8 +128,7 @@
 .container footer {
   font-size: 12px;
   font-weight: 300;
-  /*border-top: 1px double @theColor;*/
   color: #58595b;
   text-align: center;
-  padding: 20px;
+  margin-bottom: 50px !important;
 }
