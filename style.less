@@ -37,6 +37,7 @@
 		a {
 			text-decoration: none;
 			color: inherit;
+			transition: all 0.3s;
 		}
 		a:hover {
 			color: @gray;
@@ -66,10 +67,17 @@
 		.nav {
 			text-align: right;
 			a {
-				padding-left: 12px;
+				/*padding-left: 12px;*/
 				letter-spacing: .03em;
 				font-size: 14px;
 				text-transform: uppercase;
+				padding: 13px;
+				border-radius: 2px;
+				transition: all 0.4s;
+			}
+			a:hover {
+				background-color: darken(@theColor, 10%);
+				color: inherit;
 			}
 		}
 	}
@@ -80,6 +88,7 @@
 				display: inline;
 				margin: 0px;
 				padding: 0px;
+				transition: all 0.3s;
 
 				.box {
 					width: 28%;
@@ -102,11 +111,20 @@
 		}
 	}
 
+	.contact {
+		a {
+			transition: all 0.3s;
+		}
+		a:hover {
+			color: @theColor;
+		}
+	}
+
 	footer {
 		font-size: 12px;
 		font-weight: 300;
 		/*border-top: 1px double @theColor;*/
-		color: @theColor;
+		color: @gray;
 		text-align: center;
 		padding: 20px;
 	}
