@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .02em;
+}
+@media screen (min-width: 540px) {
+  .container {
+    padding-top: 30px;
+  }
+}
+.container section {
+  padding: 100px 50px 100px 50px;
+  color: #58595b;
+}
+.container section h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.container section p {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: .02em;
+  line-height: 1.7em;
+}
+.container section a {
+  text-decoration: none;
+  color: inherit;
+}
+.container section a:hover {
+  font-weight: 600;
+}
+.container .color {
+  background-color: #ffcb28;
+  color: #fff;
+}
+.container .header {
+  padding: 30px 50px 100px 50px;
+}
+.container .header h1 {
+  font-size: 85px;
+  padding-top: 10%;
+}
+.container .header p {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: .02em;
+}
+.container .header .nav {
+  text-align: right;
+}
+.container .header .nav a {
+  padding-left: 12px;
+  letter-spacing: .03em;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.container .work .grid .box {
+  display: inline;
+  width: 200px;
+  background-color: #ffcb28;
+}
