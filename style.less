@@ -4,6 +4,8 @@
 @dark: #386B95;
 @gray: #58595B;
 
+@theColor: @blue;
+
 * {
 	//clear
 	margin: 0px;
@@ -37,13 +39,13 @@
 			color: inherit;
 		}
 		a:hover {
-			font-weight: 600;
+			color: @gray;
 		}
 		
 	}
 
 	.color {
-		background-color: @gold;
+		background-color: @theColor;
 		color: #fff;
 	}
 
@@ -76,8 +78,10 @@
 		.grid {
 			.box {
 				display: inline;
-				min-width: 200px;
-				background-color: @gold;
+				width: 30%;
+				/*height: 30%;*/
+				background-color: @theColor;
+				margin-right: 3%;
 			}
 		}
 	}

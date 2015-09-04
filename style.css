@@ -28,10 +28,10 @@
   color: inherit;
 }
 .container section a:hover {
-  font-weight: 600;
+  color: #58595b;
 }
 .container .color {
-  background-color: #ffcb28;
+  background-color: #58c1ef;
   color: #fff;
 }
 .container .header {
@@ -57,6 +57,8 @@
 }
 .container .work .grid .box {
   display: inline;
-  width: 200px;
-  background-color: #ffcb28;
+  width: 30%;
+  /*height: 30%;*/
+  background-color: #58c1ef;
+  margin-right: 3%;
 }
