@@ -39,8 +39,13 @@
   padding: 30px 50px 100px 50px;
 }
 .container .header h1 {
-  font-size: 85px;
+  font-size: 65px;
   padding-top: 10%;
+}
+@media (min-width: 500px) {
+  .container .header h1 {
+    font-size: 85px;
+  }
 }
 .container .header p {
   font-size: 20px;
@@ -48,7 +53,13 @@
   letter-spacing: .02em;
 }
 .container .header .nav {
+  visibility: hidden;
   text-align: right;
+}
+@media (min-width: 500px) {
+  .container .header .nav {
+    visibility: visible;
+  }
 }
 .container .header .nav a {
   /*padding-left: 12px;*/
