@@ -67,22 +67,34 @@
   display: inline;
   margin: 0px;
   padding: 0px;
-  transition: all 0.3s;
-  /*padding: 2px;*/
-  /*background-color: @theColor;*/
-  /*				margin-right: 4%;
-				&:last-child {
-					margin-right: 0px;
-				}*/
 }
 .container .work .grid a .box {
   width: 28%;
   border: 1px solid #d8d9da;
+  margin-right: 3%;
+  transition: all 0.3s;
 }
 .container .work .grid a .caption {
   text-align: center;
-  font-size: 13px;
+  font-size: 16px;
   width: 28%;
+  padding: 12.1% 0;
+  background-color: #58c1ef;
+  color: white;
+  position: absolute;
+  left: 50px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.container .work .grid a:hover .box {
+  opacity: 0;
+}
+.container .work .grid a:hover .caption {
+  opacity: 1;
+}
+.container .contact h3 {
+  font-size: 85px;
+  /*padding-top: 10%;*/
 }
 .container .contact a {
   transition: all 0.3s;
