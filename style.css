@@ -33,6 +33,11 @@
   padding: 100px 0;
   color: #58595B;
 }
+@media (max-width: 870px) {
+  .skeleton section {
+    padding: 50px 0;
+  }
+}
 .skeleton section .container {
   padding: 0 10%;
 }
@@ -114,6 +119,14 @@
   text-decoration: none;
   cursor: pointer;
 }
+@media (max-width: 870px) {
+  .skeleton .nav a {
+    font-size: 17px;
+  }
+  .skeleton .nav a:nth-of-type(3) {
+    margin-right: 10px;
+  }
+}
 .skeleton .nav a:hover {
   background-color: #29b0eb;
   color: inherit;
@@ -183,20 +196,22 @@
   background-color: rgba(255, 255, 255, 0.9);
 }
 .skeleton #work .work-band .work-band-details h3 {
-  font-size: 35px;
-  font-weight: 900px;
+  font-size: 30px;
+  font-weight: 900;
   padding-bottom: 5px;
 }
 @media (max-width: 870px) {
   .skeleton #work .work-band .work-band-details h3 {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 .skeleton #work .work-band .work-band-details h4 {
   font-size: 15px;
-  font-weight: 100;
+  font-weight: 300;
   font-style: italic;
   text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #8b8c8e;
 }
 .skeleton #work .work-band .work-band-details p {
   font-size: 17px;
@@ -204,10 +219,12 @@
   padding: 40px 0;
 }
 .skeleton #work .work-band .work-band-details a {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.5;
-  text-decoration: underline;
+  letter-spacing: .04em;
+  font-weight: 300;
   padding-top: 20px;
+  color: #a5a6a7;
 }
 .skeleton #work .work-band:nth-child(even) {
   background-color: rgba(251, 248, 236, 0.8);
@@ -229,12 +246,28 @@
 .skeleton .about .link-btn:first-of-type {
   margin-right: 10px;
 }
+@media (max-width: 870px) {
+  .skeleton .about .link-btn:first-of-type {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 870px) {
+  .skeleton .about .link-btn {
+    width: 123px;
+    text-align: center;
+  }
+}
 .skeleton .about .link-btn:hover {
   background-color: transparent;
   color: #fff!important;
 }
 .skeleton #contact h3 {
   font-size: 85px;
+}
+@media (max-width: 870px) {
+  .skeleton #contact h3 {
+    font-size: 50px;
+  }
 }
 .skeleton #contact a {
   transition: all 0.3s;
