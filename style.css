@@ -4,34 +4,54 @@
   font-family: 'Roboto', sans-serif;
   letter-spacing: .02em;
 }
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+@media (max-width: 870px) {
+  .flex-row {
+    flex-direction: column;
+  }
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-center {
+  align-items: center;
+}
 @media screen (min-width: 540px) {
-  .container {
+  .skeleton {
     padding-top: 30px;
   }
 }
-.container section {
-  padding: 100px 50px 100px 50px;
+.skeleton section {
+  padding: 100px 0;
   color: #58595B;
 }
-.container section h2 {
+.skeleton section .container {
+  padding: 0 10%;
+}
+.skeleton section h2 {
   font-size: 35px;
   margin-bottom: 20px;
 }
-.container section p {
+.skeleton section p {
   font-size: 20px;
   font-weight: 300;
   letter-spacing: .02em;
   line-height: 1.7em;
 }
-.container section a {
+.skeleton section a {
   text-decoration: none;
   color: inherit;
   transition: all 0.3s;
 }
-.container section a:hover {
+.skeleton section a:hover {
   color: #58595B;
 }
-.container .color-btn {
+.skeleton .color-btn {
   width: 25px;
   height: 15px;
   cursor: pointer;
@@ -41,52 +61,43 @@
   display: inline;
   margin-left: 10px;
 }
-.container #blue-btn {
+.skeleton .color-btn:nth-of-type(5) {
+  margin-right: 5%;
+}
+@media (max-width: 870px) {
+  .skeleton .color-btn {
+    display: none;
+  }
+}
+.skeleton #blue-btn {
   background-color: #58C1EF;
 }
-.container #gold-btn {
+.skeleton #gold-btn {
   background-color: #FFCB28;
 }
-.container #orange-btn {
+.skeleton #orange-btn {
   background-color: #F58967;
 }
-.container #dark-btn {
+.skeleton #dark-btn {
   background-color: #386B95;
 }
-.container #gray-btn {
+.skeleton #gray-btn {
   background-color: #58595B;
 }
-.container .color {
+.skeleton .color {
   background-color: #58C1EF;
   color: #fff;
 }
-.container .header {
-  padding: 30px 50px 100px 50px;
-}
-.container .header h1 {
-  font-size: 65px;
-  padding-top: 10%;
-}
-@media (min-width: 500px) {
-  .container .header h1 {
-    font-size: 85px;
-  }
-}
-.container .header p {
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: .02em;
-}
-.container .header .nav {
-  visibility: hidden;
+.skeleton .nav {
+  background-color: #58C1EF;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  opacity: .9;
   text-align: right;
 }
-@media (min-width: 500px) {
-  .container .header .nav {
-    visibility: visible;
-  }
-}
-.container .header .nav a {
+.skeleton .nav a {
   /*padding-left: 12px;*/
   letter-spacing: .03em;
   font-size: 14px;
@@ -94,74 +105,138 @@
   padding: 13px;
   border-radius: 2px;
   transition: all 0.4s;
+  color: #fff;
+  text-decoration: none;
 }
-.container .header .nav a:hover {
+.skeleton .nav a:hover {
   background-color: #29b0eb;
   color: inherit;
 }
-.container .work .grid a {
-  display: inline;
-  margin: 0px;
-  padding: 0px;
+.skeleton .header {
+  padding: 30px 10% 100px;
 }
-.container .work .grid a .box {
-  width: 80%;
-  display: block;
-  border: 1px solid #e5e6e6;
-  padding: 15px;
-  transition: all 0.3s;
+@media (max-width: 870px) {
+  .skeleton .header {
+    padding: 60px 10% 50px;
+  }
+}
+.skeleton .header h1 {
+  font-size: 65px;
+  padding-top: 10%;
 }
 @media (min-width: 500px) {
-  .container .work .grid a .box {
-    width: 40%;
-    display: inline;
+  .skeleton .header h1 {
+    font-size: 85px;
   }
 }
-@media (min-width: 900px) {
-  .container .work .grid a .box {
-    width: 25%;
-    margin-right: 4%;
-    display: inline;
+@media (max-width: 870px) {
+  .skeleton .header h1 {
+    font-size: 55px;
   }
 }
-.container .work .grid a .caption {
-  text-align: center;
-  font-size: 16px;
-  width: 27%;
-  margin-right: 3%;
-  padding: 12.1% 0;
-  background-color: #6fcaf1;
-  color: white;
-  position: absolute;
-  left: 50px;
-  opacity: 0;
-  transition: all 0.3s;
-  display: inline;
+.skeleton .header p {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: .02em;
+  margin-top: 10px;
 }
-.container .work .grid a .caption.two {
-  left: 34%;
+.skeleton .work {
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.container .work .grid a .caption.three {
-  left: 64%;
+.skeleton .work .work-band {
+  padding: 80px 4% 80px 2%;
 }
-@media (min-width: 900px) {
-  .container .work .grid a:hover .box {
-    opacity: 0;
-  }
-  .container .work .grid a:hover .caption {
-    opacity: 1;
+@media (max-width: 870px) {
+  .skeleton .work .work-band {
+    padding: 50px 10%;
   }
 }
-.container .contact h3 {
+.skeleton .work .work-band div {
+  width: 50%;
+}
+@media (max-width: 870px) {
+  .skeleton .work .work-band div {
+    width: 100%;
+  }
+}
+.skeleton .work .work-band div:first-of-type {
+  max-width: 600px;
+}
+.skeleton .work .work-band img {
+  width: 100%;
+  max-width: 580px;
+}
+@media (max-width: 870px) {
+  .skeleton .work .work-band img {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+.skeleton .work .work-band .work-band-details {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.skeleton .work .work-band .work-band-details h3 {
+  font-size: 35px;
+  font-weight: 900px;
+  padding-bottom: 5px;
+}
+@media (max-width: 870px) {
+  .skeleton .work .work-band .work-band-details h3 {
+    font-size: 25px;
+  }
+}
+.skeleton .work .work-band .work-band-details h4 {
+  font-size: 15px;
+  font-weight: 100;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.skeleton .work .work-band .work-band-details p {
+  font-size: 17px;
+  line-height: 1.5;
+  padding: 40px 0;
+}
+.skeleton .work .work-band .work-band-details a {
+  font-size: 17px;
+  line-height: 1.5;
+  text-decoration: underline;
+  padding-top: 20px;
+}
+.skeleton .work .work-band:nth-child(even) {
+  background-color: rgba(251, 248, 236, 0.8);
+}
+.skeleton .work .work-band:nth-child(even) .work-band-details {
+  background-color: rgba(251, 248, 236, 0.8);
+}
+.skeleton .about p {
+  margin-bottom: 20px;
+}
+.skeleton .about .link-btn {
+  background-color: #fff;
+  border: 1px solid #fff;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #58C1EF;
+  display: inline-block;
+}
+.skeleton .about .link-btn:first-of-type {
+  margin-right: 10px;
+}
+.skeleton .about .link-btn:hover {
+  background-color: transparent;
+  color: #fff!important;
+}
+.skeleton .contact h3 {
   font-size: 85px;
 }
-.container .contact a {
+.skeleton .contact a {
   transition: all 0.3s;
 }
-.container .contact a:hover {
+.skeleton .contact a:hover {
   color: #58C1EF;
 }
-.container footer {
+.skeleton footer {
   font-size: 12px;
   font-weight: 300;
   color: #58595B;

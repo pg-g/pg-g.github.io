@@ -5,62 +5,110 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,100,300,500' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="container">
-	
+	<div class="skeleton">
+
+		<div class="nav color">
+			<a href="#work">Work</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+			<button class="color-btn" id="blue-btn"></button>
+			<button class="color-btn" id="gray-btn"></button>
+			<button class="color-btn" id="gold-btn"></button>
+			<button class="color-btn" id="dark-btn"></button>
+			<button class="color-btn" id="orange-btn"></button>
+		</div>
 
 		<!--TITLE-->
 		<section class="header color">
 			
-			<div class="nav">
-				<a href="#work">Work</a>
-				<a href="#about">About</a>
-				<a href="#contact">Contact</a>
-				<button class="color-btn" id="blue-btn"></button>
-				<button class="color-btn" id="gray-btn"></button>
-				<button class="color-btn" id="gold-btn"></button>
-				<button class="color-btn" id="dark-btn"></button>
-				<button class="color-btn" id="orange-btn"></button>
-			</div>
 
-			<h1>My name is Paige.</h1>
-			<p>I love white space, beautiful charts, and great web design.</p>
+			<h1>My name is&nbsp;Paige.</h1>
+			<p>I love white space, efficiency, beautiful charts, and great web design.</p>
 		</section>
 
 		<!--WORK-->
-		<a name="work"></a> <section class="work">
-			<h2>Recent Work</h2>
+		<a name="work"></a> 
+		<section class="work">
+				<div class="work-band flex flex-row flex-center">
+					<div><img src="img/br-1.png"></div>
+					<div class="work-band-details">
+						<h3>Home Page Redesign</h3>
+						<h4>developed</h4>
+						<p>Homepage with heavy animation, built with javascript and svgs, without libraries.</p>
+						<a>getbridge.com</a>
+					</div>
+				</div>
 
-			<div class="grid">
-<!-- 				<a href="http://jive.com/voice" target="blank"><img class="box" src="img/jive.png">
-					<span class="caption">Jive Main Product Page: <i>Developed &amp; Co-Designed</i></span>
-				</a> -->
-				<a href="http://jive.com" target="blank"><img class="box" src="img/jive.png">
-					<span class="caption">Jive Company Website <br><i>Developed &amp; Initially Designed (2014-2015)</i></span>
-				</a>
-				<a href="https://github.com/pg-g/pain-tracker" target="blank"><img class="box" src="img/app.png">
-					<span class="caption two">Pain Tracker App <br><i>Developed &amp; Designed (2015)</i></span>
-				</a>
-				<a href="http://jive.com/customers" target="blank"><img class="box" src="img/customers.png">
-					<span class="caption three">Jive Customers Page <br><i>Developed &amp; Designed (2015)</i></span>
-				</a>
-			</div>
+				<div class="work-band flex flex-row flex-center">
+					<div><img src="img/arc-1.png"></div>
+					<div class="work-band-details">
+						<h3>Product Website</h3>
+						<h4>developed</h4>
+						<p>4-page website for launch of new product, Arc, in short timeline. Site was designed to feature video and heavy animation. Form is built with Marketo.</p>
+						<a>arcmedia.com</a>
+					</div>
+				</div>
+
+				<div class="work-band flex flex-row flex-center">
+					<div><img src="img/br-2.png"></div>
+					<div class="work-band-details">
+						<h3>Learning Center</h3>
+						<h4>developed</h4>
+						<p>A searchable, filterable database of articles, infographics, and other materials. Built with javascript and json, without libraries.</p>
+						<a>getbridge.com/lc</a>
+					</div>
+				</div>
+
+				<div class="work-band flex flex-row flex-center">
+					<div><img src="img/br-3.png"></div>
+					<div class="work-band-details">
+						<h3>Features Page</h3>
+						<h4>developed</h4>
+						<p>A video-heavy hub built with a responsive grid and animated rollovers, outlining the product's features.</p>
+						<a>getbridge.com/features</a>
+					</div>
+				</div>
+
+				<div class="work-band flex flex-row flex-center">
+					<div><img src="img/ji-3.png"></div>
+					<div class="work-band-details">
+						<h3>Tour Page</h3>
+						<h4>developed, art directed</h4>
+						<p>Worked with a team of writers & designers to plan, write, and design page. <i>Since I left the company this page is no longer in tact.</i></p>
+						<a>jive.com/tour</a>
+					</div>
+				</div>
+
+				<div class="work-band flex flex-row flex-center">
+					<div><img src="img/ji-1.png"></div>
+					<div class="work-band-details">
+						<h3>Jive Website</h3>
+						<h4>developed</h4>
+						<p>Designed and built initial iteration of jive.com's custom Wordpress theme. <i>Since I left the company this site has undergone major changes.</i></p>
+						<a>jive.com</a>
+					</div>
+				</div>
+
 		</section>
+
 
 		<!--ABOUT-->
-		<a name="about"></a> <section class="about color">
+		<a name="about"></a> <section class="about color"><div class="container">
 			<h2>About</h2>
-			<p>Front end developer and designer with 5 years of experience, including 3+ years managing <a href="http://jive.com" target="blank">corporate</a> <a href="https://www.instructure.com">websites</a>. Tools include HTML, CSS, LESS, Javascript, PHP, and a basic knowledge AngularJS.</p><br />
-		</section>
+			<p>Front end developer and designer with 5 years of experience, including 3+ years managing <a href="http://jive.com" target="blank">corporate</a> <a href="https://www.instructure.com">websites</a>. Main tools include HTML, CSS, LESS, Javascript, with a working knowledge of PHP. Passionate about organizing, learning, improving, communication, and building a great product.</p>
+				<a class="link-btn" href="img/Rickert_2017resume.pdf" target="blank">Resume</a>
+				<a class="link-btn" href="img/port.pdf" target="blank">Design Portfolio</a>
+		</div></section>
 
 		<!--CONTACT-->
-		<a name="contact"></a> <section class="contact">
+		<a name="contact"></a> <section class="contact"><div class="container">
 			<h3>Let&#39;s talk!</h3>
 			<p>Have a project in mind? I'd love to chat.</p>
 			<p><a href="https://www.linkedin.com/in/paigeguthrie" target="blank">LinkedIn</a></p>
 			<p><a href="https://www.twitter.com/pg_g" target="blank">Twitter</a></p>
 			<p><a href="https://www.github.com/pg-g" target="blank">Github</a></p>
 			<p>paigegu3 at gmail.com</p>
-		</section>
+		</div></section>
 
 
 
@@ -75,6 +123,6 @@
 	</div>
 	
 	<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
-	<script src="home.js"></script>
+	<script src="home.js?v=2.0"></script>
 </body>
 </html>

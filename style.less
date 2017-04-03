@@ -16,13 +16,23 @@
 	letter-spacing: .02em;
 }
 
-.container {
+.flex { display:flex; }
+.flex-row { 
+	flex-direction: row; 
+	@media(max-width: 870px){flex-direction: column;}}
+.flex-column { flex-direction: column; }
+.flex-center { align-items: center; }
+
+
+.skeleton {
 	@media screen (min-width: 540px) {
 		padding-top: 30px;
 	}
-
 	section {
-		padding: 100px 50px 100px 50px;
+		padding: 100px 0;
+		.container {
+			padding: 0 10%;
+		} 
 		color: @gray;
 		h2 {
 			font-size: 35px;
@@ -54,6 +64,12 @@
 		border: 1px solid white;
 		display: inline;
 		margin-left: 10px;
+		&:nth-of-type(5){
+			margin-right: 5%;
+		}
+		@media(max-width: 870px){
+			display: none;
+		}
 	}
 
 	#blue-btn { background-color: #58C1EF; }
@@ -67,102 +83,122 @@
 		color: #fff;
 	}
 
+	//nav
+	.nav {
+		.color();
+		position: fixed;
+		width: 100%;
+		padding: 20px 0;
+		opacity: .9;
+		text-align: right;
+		// visibility: hidden;
+		// @media (min-width: 500px) {
+		// 	visibility: visible;
+		// }
+		a {
+			/*padding-left: 12px;*/
+			letter-spacing: .03em;
+			font-size: 14px;
+			text-transform: uppercase;
+			padding: 13px;
+			border-radius: 2px;
+			transition: all 0.4s;
+			color: #fff;
+			text-decoration: none;
+		}
+		a:hover {
+			background-color: darken(@theColor, 10%);
+			color: inherit;
+		}
+	}
 	//header section
 	.header {
-		padding: 30px 50px 100px 50px;
+		padding: 30px 10% 100px;
+		@media (max-width:870px){padding:60px 10% 50px}
 
 		h1 {
 			font-size: 65px;
-			@media (min-width: 500px) {
-				font-size: 85px;
-			}
+			@media (min-width: 500px) {font-size: 85px;}
+			@media (max-width: 870px){font-size: 55px;}
 			padding-top: 10%;
 		}
 		p {
 			font-size: 20px;
 			font-weight: 300;
 			letter-spacing: .02em;
+			margin-top: 10px;
 		}
-		//nav
-		.nav {
-			visibility: hidden;
-			@media (min-width: 500px) {
-				visibility: visible;
+	}
+	.work {
+		padding-top: 0;
+		padding-bottom: 0;
+		.work-band {
+			padding: 80px 4% 80px 2%;
+			@media(max-width: 870px){padding: 50px 10%;}
+			div	{
+				width: 50%;
+				@media(max-width: 870px){width: 100%}
+				&:first-of-type{max-width: 600px;}
 			}
-			text-align: right;
-			a {
-				/*padding-left: 12px;*/
-				letter-spacing: .03em;
-				font-size: 14px;
-				text-transform: uppercase;
-				padding: 13px;
-				border-radius: 2px;
-				transition: all 0.4s;
+			img {
+				width: 100%;
+				max-width: 580px;
+				@media(max-width: 870px){
+					width: 90%;
+					margin-bottom: 10px;
+				}
 			}
-			a:hover {
-				background-color: darken(@theColor, 10%);
-				color: inherit;
+			.work-band-details {
+				background-color: rgba(255,255,255,.9);
+				h3 { 
+					font-size: 35px; 
+					font-weight: 900px;
+					padding-bottom: 5px;
+					@media(max-width: 870px){font-size: 25px;}
+				}
+				h4 {
+					font-size: 15px;
+					font-weight: 100;
+					font-style: italic;
+					text-transform: uppercase;
+				}
+				p {
+					font-size: 17px;
+					line-height: 1.5;
+					padding: 40px 0;
+				}
+				a { 
+					font-size: 17px;
+					line-height: 1.5;
+					text-decoration: underline; 
+					padding-top: 20px;
+				}
+			}
+			&:nth-child(even){
+				background-color: rgba(251,248,236,.8);
+				.work-band-details {
+					background-color: rgba(251,248,236,.8);
+				}
 			}
 		}
 	}
 
-	.work {
-		.grid {
-			a {
-				display: inline;
-				margin: 0px;
-				padding: 0px;
-
-				.box {
-					width: 80%;
-					display: block;
-					@media (min-width: 500px) {
-						width: 40%;
-						display: inline;
-					}
-					@media (min-width: 900px) {
-						width: 25%;
-						margin-right: 4%;
-						display: inline;
-					}
-					border: 1px solid lighten(@gray, 55%);
-					padding: 15px;
-					transition: all 0.3s;
-				}
-
-				.caption {
-					text-align: center;
-					font-size: 16px;
-					width: 27%;
-					margin-right: 3%;
-					padding: 12.1% 0;
-					background-color: lighten(@theColor, 5%);
-					color: white;
-					
-					position: absolute;
-					left: 50px;
-					&.two {
-						left: 34%;
-					}
-					&.three {
-						left: 64%;
-					}
-
-					opacity: 0;
-					transition: all 0.3s;
-					display: inline;
-				}
+	.about {
+		p {
+			margin-bottom: 20px;
+		}
+		.link-btn {
+			background-color: #fff;
+			border: 1px solid #fff;
+			font-weight: 600;
+			padding: 15px 30px;
+			color: @theColor;
+			display: inline-block;
+			&:first-of-type { margin-right: 10px;}
+			&:hover {
+				background-color: transparent;
+				color: #fff!important;
 			}
-			@media (min-width: 900px){
-				a:hover {
-					.box {
-						opacity: 0;
-					}
-					.caption {
-						opacity: 1;
-					}
-				}
-			} //end hover
 		}
 	}
 
