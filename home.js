@@ -20,15 +20,13 @@ $('#dark-btn').on("click", function(){
 });
 
 $(document).ready(function () {
-	$('#work-link').on('click', function(){
+	$('.nav a').on('click', function(){
 		var theID = this.id;
-		var targetID = 'work';
-		console.log(theID);
-		console.log(targetID);
-		var d = document.getElementById(targetID);
+		var targetID = theID.replace('-link','');
+		var d = document.getElementById(targetID); 
 		    var topPos = d.offsetTop;
 		    $('html, body').animate({
-		        scrollTop: topPos-114,
+		        scrollTop: topPos-55,
 		    },500);
 	});
 });

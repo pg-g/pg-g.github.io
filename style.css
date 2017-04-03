@@ -112,6 +112,7 @@
   transition: all 0.4s;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 .skeleton .nav a:hover {
   background-color: #29b0eb;
@@ -145,73 +146,73 @@
   letter-spacing: .02em;
   margin-top: 10px;
 }
-.skeleton .work {
+.skeleton #work {
   padding-top: 0;
   padding-bottom: 0;
 }
-.skeleton .work .work-band {
+.skeleton #work .work-band {
   padding: 80px 4% 80px 2%;
 }
 @media (max-width: 870px) {
-  .skeleton .work .work-band {
+  .skeleton #work .work-band {
     padding: 50px 10%;
   }
 }
-.skeleton .work .work-band div {
+.skeleton #work .work-band div {
   width: 50%;
 }
 @media (max-width: 870px) {
-  .skeleton .work .work-band div {
+  .skeleton #work .work-band div {
     width: 100%;
   }
 }
-.skeleton .work .work-band div:first-of-type {
+.skeleton #work .work-band div:first-of-type {
   max-width: 600px;
 }
-.skeleton .work .work-band img {
+.skeleton #work .work-band img {
   width: 100%;
   max-width: 580px;
 }
 @media (max-width: 870px) {
-  .skeleton .work .work-band img {
+  .skeleton #work .work-band img {
     width: 90%;
     margin-bottom: 10px;
   }
 }
-.skeleton .work .work-band .work-band-details {
+.skeleton #work .work-band .work-band-details {
   background-color: rgba(255, 255, 255, 0.9);
 }
-.skeleton .work .work-band .work-band-details h3 {
+.skeleton #work .work-band .work-band-details h3 {
   font-size: 35px;
   font-weight: 900px;
   padding-bottom: 5px;
 }
 @media (max-width: 870px) {
-  .skeleton .work .work-band .work-band-details h3 {
+  .skeleton #work .work-band .work-band-details h3 {
     font-size: 25px;
   }
 }
-.skeleton .work .work-band .work-band-details h4 {
+.skeleton #work .work-band .work-band-details h4 {
   font-size: 15px;
   font-weight: 100;
   font-style: italic;
   text-transform: uppercase;
 }
-.skeleton .work .work-band .work-band-details p {
+.skeleton #work .work-band .work-band-details p {
   font-size: 17px;
   line-height: 1.5;
   padding: 40px 0;
 }
-.skeleton .work .work-band .work-band-details a {
+.skeleton #work .work-band .work-band-details a {
   font-size: 17px;
   line-height: 1.5;
   text-decoration: underline;
   padding-top: 20px;
 }
-.skeleton .work .work-band:nth-child(even) {
+.skeleton #work .work-band:nth-child(even) {
   background-color: rgba(251, 248, 236, 0.8);
 }
-.skeleton .work .work-band:nth-child(even) .work-band-details {
+.skeleton #work .work-band:nth-child(even) .work-band-details {
   background-color: rgba(251, 248, 236, 0.8);
 }
 .skeleton .about p {
@@ -232,13 +233,13 @@
   background-color: transparent;
   color: #fff!important;
 }
-.skeleton .contact h3 {
+.skeleton #contact h3 {
   font-size: 85px;
 }
-.skeleton .contact a {
+.skeleton #contact a {
   transition: all 0.3s;
 }
-.skeleton .contact a:hover {
+.skeleton #contact a:hover {
   color: #58C1EF;
 }
 .skeleton footer {
