@@ -22,6 +22,7 @@
 	@media(max-width: 870px){flex-direction: column;}}
 .flex-column { flex-direction: column; }
 .flex-center { align-items: center; }
+.transition { transition: all 0.4s; }
 
 
 .skeleton {
@@ -81,6 +82,7 @@
 	.color {
 		background-color: @theColor;
 		color: #fff;
+		.transition();
 	}
 
 	//nav

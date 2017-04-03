@@ -21,6 +21,9 @@
 .flex-center {
   align-items: center;
 }
+.transition {
+  transition: all 0.4s;
+}
 @media screen (min-width: 540px) {
   .skeleton {
     padding-top: 30px;
@@ -87,10 +90,12 @@
 .skeleton .color {
   background-color: #58C1EF;
   color: #fff;
+  transition: all 0.4s;
 }
 .skeleton .nav {
   background-color: #58C1EF;
   color: #fff;
+  transition: all 0.4s;
   position: fixed;
   width: 100%;
   padding: 20px 0;
