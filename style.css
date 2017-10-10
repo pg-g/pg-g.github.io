@@ -93,12 +93,12 @@
   background-color: #58595B;
 }
 .skeleton .color {
-  background-color: #58C1EF;
+  background-color: #386B95;
   color: #fff;
   transition: all 0.4s;
 }
 .skeleton .nav {
-  background-color: #58C1EF;
+  background-color: #386B95;
   color: #fff;
   transition: all 0.4s;
   position: fixed;
@@ -128,7 +128,7 @@
   }
 }
 .skeleton .nav a:hover {
-  background-color: #29b0eb;
+  background-color: #2a5070;
   color: inherit;
 }
 .skeleton .header {
@@ -240,7 +240,7 @@
   border: 1px solid #fff;
   font-weight: 600;
   padding: 15px 30px;
-  color: #58C1EF;
+  color: #386B95;
   display: inline-block;
 }
 .skeleton .about .link-btn:first-of-type {
@@ -273,7 +273,7 @@
   transition: all 0.3s;
 }
 .skeleton #contact a:hover {
-  color: #58C1EF;
+  color: #386B95;
 }
 .skeleton footer {
   font-size: 12px;
