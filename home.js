@@ -18,6 +18,14 @@ $('#dark-btn').on("click", function(){
 	$('.color').css('background-color','#386B95');
 	$('.link-btn').css('color','#386B95');
 });
+$('#pink-btn').on("click", function(){
+	$('.color').css('background-color','#E91E63');
+	$('.link-btn').css('color','#E91E63');
+});
+$('#green-btn').on("click", function(){
+	$('.color').css('background-color','#4caf50');
+	$('.link-btn').css('color','#4caf50');
+});
 
 $(document).ready(function () {
 	$('.nav a').on('click', function(){
