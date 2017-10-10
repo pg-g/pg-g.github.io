@@ -84,13 +84,19 @@
   background-color: #FFCB28;
 }
 .skeleton #orange-btn {
-  background-color: #F58967;
+  background-color: #fb8c00;
 }
 .skeleton #dark-btn {
   background-color: #386B95;
 }
 .skeleton #gray-btn {
   background-color: #58595B;
+}
+.skeleton #pink-btn {
+  background-color: #E91E63;
+}
+.skeleton #green-btn {
+  background-color: #4caf50;
 }
 .skeleton .color {
   background-color: #386B95;
