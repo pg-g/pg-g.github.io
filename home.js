@@ -3,8 +3,8 @@ $('#blue-btn').on("click", function(){
 	$('.link-btn').css('color','#58C1EF');
 });
 $('#gold-btn').on("click", function(){
-	$('.color').css('background-color','#FFCB28');
-	$('.link-btn').css('color','#FFCB28');
+	$('.color').css('background-color','#ffca28');
+	$('.link-btn').css('color','#ffca28');
 });
 $('#orange-btn').on("click", function(){
 	$('.color').css('background-color','#ef5350');
