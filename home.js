@@ -7,8 +7,8 @@ $('#gold-btn').on("click", function(){
 	$('.link-btn').css('color','#FFCB28');
 });
 $('#orange-btn').on("click", function(){
-	$('.color').css('background-color','#F58967');
-	$('.link-btn').css('color','#F58967');
+	$('.color').css('background-color','#ef5350');
+	$('.link-btn').css('color','#ef5350');
 });
 $('#gray-btn').on("click", function(){
 	$('.color').css('background-color','#58595B');
@@ -19,8 +19,8 @@ $('#dark-btn').on("click", function(){
 	$('.link-btn').css('color','#386B95');
 });
 $('#pink-btn').on("click", function(){
-	$('.color').css('background-color','#E91E63');
-	$('.link-btn').css('color','#E91E63');
+	$('.color').css('background-color','#ec407a');
+	$('.link-btn').css('color','#ec407a');
 });
 $('#green-btn').on("click", function(){
 	$('.color').css('background-color','#4caf50');
